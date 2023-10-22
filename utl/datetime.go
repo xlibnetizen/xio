@@ -119,6 +119,9 @@ func GetStartDateWithTimeZone(milliseconds int64, timezone string) int64 {
 
 func GetDateWithLayoutAndTimeZone(milliseconds int64, layout, timezone string) string {
 	t := time.Unix(0, milliseconds*int64(time.Millisecond))
+	if timezone == "" {
+		timezone = defaultTimezone
+	}
 	loc, err := time.LoadLocation(timezone)
 	if err != nil {
 		return ""

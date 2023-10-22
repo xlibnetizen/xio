@@ -1,5 +1,7 @@
 package utl
 
 func Echo() string {
-	return "Welcome to Xlib xio.."
+	date := GetCurrentDate()
+	formatDate := GetDateWithLayoutAndTimeZone(date, "2006/01/02 15:04:05", "")
+	return "Welcome to lib: " + formatDate
 }
