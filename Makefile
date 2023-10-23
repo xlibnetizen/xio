@@ -7,7 +7,7 @@ tidy:
 
 init:
 	rm -Rf go.mod
-	go mod init github.com/xlibnetizen/xio.git
+	go mod init github.com/xlibnetizen/xio
 
 start: 
 	go run src/main.go
