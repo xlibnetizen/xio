@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/xlibnetizen/xio.git/utl"
+	"github.com/xlibnetizen/xio.git/dba"
 )
 
 func main() {
-	msg := utl.Echo()
+	msg := dba.Echo()
 	fmt.Println("Ok", msg)
 }
