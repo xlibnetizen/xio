@@ -1,3 +1,3 @@
-module github.com/xlibnetizen/xio.git
+module skyxio
 
 go 1.21.2
